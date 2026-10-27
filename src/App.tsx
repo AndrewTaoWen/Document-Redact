@@ -472,7 +472,7 @@ function App() {
         });
       }
     }
-  }, [mode, isDrawing, dragStart, boxes, selectedBox, findNearestBox, nearestBox, isResizing, resizeStart, resizeHandle, updateBox]);
+  }, [mode, isDrawing, dragStart, boxes, selectedBox, findNearestBox, nearestBox, isResizing, resizeStart, resizeHandle, updateBox, getResizeHandle]);
 
   const handleMouseUp = useCallback((e: React.MouseEvent<HTMLCanvasElement>) => {
     // Handle resize completion
